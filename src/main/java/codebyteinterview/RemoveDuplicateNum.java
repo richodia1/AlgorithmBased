@@ -64,19 +64,32 @@ public static int[] remove(int[] arr, int key) {
    //for(int j : arr) System.out.println("Arr WAS: "+j);
     return arr;
 }
-
+public static void removeDup(int[] arr, int n){
+    if(n==0 || n==1) return;
+    int len = 0, i;
+    for(i = 0; i < n-1; i++) {
+        if (arr[i] != arr[i + 1]) {
+            arr[len++] = arr[i];
+        }
+    }
+        arr[len++] = arr[n - 1];
+    for(int in : arr) System.out.println(in);
+}
     public static void main(String[] args) {
-        int[] arr = new int[] { 3, 2, 3, 6, 3, 10, 9, 3 };
-        var result = removeDupAndCount(arr,3);
+        //int[] arr = new int[] { 1,1,1,3,4 };
+        //removeDup(arr,5);
+       // int[] arr = new int[] { 3, 2, 3, 6, 3, 10, 9, 3 };
+       // var result = removeDupAndCount(arr,3);
      //  for(int i =0;i<result.length;i++) System.out.println(arr[i]);
-        System.out.println(result);
-      /*  arr = new int[] { 2, 2, 2, 11 };
-        System.out.println(remove(arr));
-        int[] arr2 = new int[] { 3, 2, 3, 6, 3, 10, 9, 3 };
-        System.out.println(remove(arr2, 3));
+      //  System.out.println(result);
+     //arr = new int[] { 2, 2, 2, 11 };
+       // System.out.println(remove(arr));
+        //int[] arr2 = new int[] { 3, 2, 3, 6, 3, 10, 9, 3 };
+       // System.out.println(remove(arr2, 3));
 
-        arr = new int[] { 2, 11, 2, 2, 1 };
-        System.out.println(remove(arr, 2));*/
+       int[] arr = new int[] { 2, 11, 2, 2, 1 };
+        System.out.println(remove(arr, 2));
+        for(var i : arr) System.out.println(i);
 
     }
 }

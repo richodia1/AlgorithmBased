@@ -26,8 +26,8 @@ public class CyclicSortArray {
         int i = 0;
         while (i < arr.length){
             int j = arr[i] - 1;
-            System.out.println("J is :"+j);
-            if(arr[i] != arr[i]) {
+           // System.out.println("J is :"+j);
+            if(arr[i] != arr[j]) {
                 swap(arr, i, j);
             }else {
                 i++;
@@ -40,13 +40,13 @@ public class CyclicSortArray {
         int i = 0;
         while (i < nums.length) {
             int j = nums[i] - 1;
-            System.out.println("J is :"+j);
+           // System.out.println("J is :"+j);
             if (nums[i] != nums[j])
                 swap(nums, i, j);
             else
                 i++;
         }
-        System.out.println("The count was :" +i);
+        //System.out.println("The count was :" +i);
     }
 
     private static void swap(int[] arr, int i, int j) {

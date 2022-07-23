@@ -14,7 +14,7 @@ public class PairWithTagetTwoSUM {
             if (currentSum == targetSum)
                 return new int[] { left, right }; // found the pair
 
-            if (targetSum > currentSum)
+            if (currentSum > targetSum)
                 left++; // we need a pair with a bigger sum
             else
                 right--; // we need a pair with a smaller sum

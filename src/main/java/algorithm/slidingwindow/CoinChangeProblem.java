@@ -1,4 +1,8 @@
 package algorithm.slidingwindow;
+
+import java.util.HashSet;
+import java.util.Set;
+
 /*
 You’re given coins of different denominations and a total amount of money.
  From that, you need to write a function to compute the fewest number
@@ -48,17 +52,29 @@ public class CoinChangeProblem {
         }
         return lookupTable[amount][denomsLength - 1];
     }
+    public static int reeverseNumber(int num){
+        int reverse = 0;
+        while (num != 0){
+            reverse = reverse * 10 + num % 10;
+           num = num/10;
+        }
+        return reverse;
+    }
 
     // Driver Code
     public static void main(String[] args) {
         //int[] denoms = {25,10,5,1};
+        // System.out.println(reverseNumber(807));
         //System.out.println(countChange(denoms, 4, 10));
         int number = 987654, reverse = 0;
+        Set<String> set = new HashSet<>();
+
         while(number != 0)
         {
             reverse = reverse * 10 + number % 10;
             number = number/10;
         }
+
         System.out.println("The reverse of the given number is: " + reverse);
 
 }

@@ -43,6 +43,20 @@ public class CyclicRotationArray {
         rotate(arr,4);
         for(int i : arr) System.out.println(i);
     }
+    public static void rotateR(int[] arr, int k){
+        int count = 0;
+        while (count < k){
+            RightRotate(arr);
+            count++;
+        }
+    }
+    public static void RightRotate(int[] arr){
+        int temp = arr[arr.length - 1];
+        for(int i = arr.length - 1; i > 0; i--){
+            arr[i] = arr[i -1];
+        }
+        arr[0] = temp;
+    }
    static void rotate(int arr[], int k)
     {
         if(arr == null || arr.length < 2)

@@ -14,6 +14,7 @@ static String Comp(String str){
             compress.append(str.charAt(i));
             compress.append(count);
             count = 0;
+
         }
     }
     return compress.toString();

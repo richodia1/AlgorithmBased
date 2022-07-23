@@ -5,36 +5,23 @@ import java.util.Stack;
 public class BalanceBracket {
 
     public static void main(String[] args){
-        System.out.println(isBalanceBracket("()"));
+        System.out.println(isBalanceBracket2("([)"));
     }
 
     public static boolean isBalanceBracket(String str){
-        Stack<Character> stack = new Stack<Character>();
-        for(int i = 0; i <str.length();i++){
-            Character ch = str.charAt(i);
-            switch (ch){
-                case '{':
-                case '(':
-                case '[':
-                    stack.push(ch);
-                    break;
-                case '}':
-                    if(stack.isEmpty() || stack.pop() !='{'){
-                        return false;
-                    }
-                    break;
-                case ')':
-                    if(stack.isEmpty() || stack.pop() != '('){
-                        return false;
-                    }
-                case ']':
-                    if(stack.isEmpty() || stack.pop() != '['){
-                        return false;
-                    }
-            }
-
+        while (str.contains("()") || str.contains("[]") || str.contains("{}")) {
+            str = str.replaceAll("\\(\\)", "")
+                    .replaceAll("\\[\\]", "")
+                    .replaceAll("\\{\\}", "");
         }
-
-        return stack.isEmpty();
+        return (str.length() == 0);
+    }
+    public static boolean isBalanceBracket2(String str){
+        while (str.contains("()") || str.contains("{}") ||str.contains("[]")){
+           str = str.replaceAll("\\(\\)","")
+                   .replaceAll("\\[\\]","")
+                   .replaceAll("\\{\\}","");
+        }
+        return  str.length() == 0;
     }
 }

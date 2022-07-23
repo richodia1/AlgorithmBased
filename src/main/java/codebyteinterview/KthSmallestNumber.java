@@ -1,14 +1,26 @@
 package codebyteinterview;
 
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.PriorityQueue;
+import java.util.Queue;
 
 public class KthSmallestNumber {
     public static void main(String[] args) {
       int[] arr ={5,1,6,3,7};
-        System.out.println("The second largest is: " + findKthLargestNumber(arr,2));
-       System.out.println("The second smallest is: " + findKthSmallestNumber(arr,2));
+      int k =3;
+        //System.out.println("The second largest is: " + findKthLargestNumber(arr,2));
+      // System.out.println("The second smallest is: " + findKthSmallestNumber(arr,2));
+
+        System.out.println("My own : "+findKthSmallestNumber(arr, 4));
+        System.out.println("Thier own: "+findKthSmallestNumber(arr, 4));
 
 
+
+    }
+    public static int findKthSmallestNumber2(int[] nums, int k) {
+        Arrays.sort(nums);
+        return nums[k-1];
     }
 
     public static int findKthSmallestNumber(int[] nums, int k) {

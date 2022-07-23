@@ -1,6 +1,7 @@
 package codebyteinterview;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.PriorityQueue;
 
@@ -38,9 +39,18 @@ public class FindDuplicateNumbers {
 
         duplicates = findNumbers(new int[] { 5, 4, 7,7, 2, 3, 5, 3 });
         System.out.println("Duplicates are: " + duplicates);*/
-        System.out.println(findDuplicateWithoutExtraSpace(new int[] { 2, 1, 3, 3, 5, 4 }));
+        System.out.println(findDuplicateWithoutExtraSpace(new int[] { 2, 1, 3, 3, 5,4, 4 }));
+        System.out.println(MyOwn(new int[] { 2, 1, 3, 3, 5,4, 4 }));
     }
-
+    public static int MyOwn(int[] nums){
+        Arrays.sort(nums);
+        for(int i = 0; i < nums.length; i++){
+            if(nums[i] == nums[i + 1]){
+                return nums[i];
+            }
+        }
+        return -1;
+    }
     public static List<Integer> findNumbers(int[] nums) {
         int i = 0;
         while (i < nums.length) {

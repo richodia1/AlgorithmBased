@@ -25,13 +25,7 @@ Explanation: Replace the 'b' or 'd' with 'c' to have the longest repeating subst
 
  */
 public class CharacterReplacement {
-    public static void main(String[] args) {
 
-      int[] list = {5,6,1,4,2};
-
-
-       //System.out.println(minCost(9,list));
-    }
 
 
     public static int findRank( int[] arr, int k ){
@@ -56,30 +50,54 @@ public class CharacterReplacement {
         return arr.length;
     }
     public static int findLength(String str, int k) {
-        int windowStart = 0, maxLength = 0, maxRepeatLetterCount = 0;
-        Map<Character, Integer> letterFrequencyMap = new HashMap<>();
-        // try to extend the range [windowStart, windowEnd]
-        for (int windowEnd = 0; windowEnd < str.length(); windowEnd++) {
-            char rightChar = str.charAt(windowEnd);
-            letterFrequencyMap.put(rightChar, letterFrequencyMap.getOrDefault(rightChar, 0) + 1);
-            maxRepeatLetterCount = Math.max(maxRepeatLetterCount, letterFrequencyMap.get(rightChar));
+        int maxLenght = Integer.MAX_VALUE; int start = 0;
+        Map<Character,Integer> charFreq = new HashMap<>();
+        for(int end = 0; end < str.length(); end++){
+            char ch = str.charAt(end);
+            charFreq.put(ch,charFreq.getOrDefault(ch,0) +1);
 
-            // current window size is from windowStart to windowEnd, overall we have a letter which is
-            // repeating 'maxRepeatLetterCount' times, this means we can have a window which has one letter
-            // repeating 'maxRepeatLetterCount' times and the remaining letters we should replace.
-            // if the remaining letters are more than 'k', it is the time to shrink the window as we
-            // are not allowed to replace more than 'k' letters
-            if (windowEnd - windowStart + 1 - maxRepeatLetterCount > k) {
-                char leftChar = str.charAt(windowStart);
-                letterFrequencyMap.put(leftChar, letterFrequencyMap.get(leftChar) - 1);
-                windowStart++;
+            while (charFreq.size() > k){
+                char chs = str.charAt(start);
+                charFreq.put(chs,charFreq.getOrDefault(chs,0) - 1);
+                if(charFreq.get(chs) == 0){
+                    charFreq.remove(chs);
+                }
+                start++;
             }
+              maxLenght = Math.max(maxLenght,end - start +1 );
 
-            maxLength = Math.max(maxLength, windowEnd - windowStart + 1);
         }
-
-        return maxLength;
+        return maxLenght;
     }
 
+/*
+1.3 URLify: Write a method to replace all spaces in a string with '%2e: You may assume that the string
+has sufficient space at the end to hold the additional characters, and that you are given the "true"
+length of the string. (Note: if implementing in Java, please use a character array so that you can
+perform this operation in place.)
+EXAMPLE
+Input: "Mr John Smith JJ, 13
+Output: "Mr%2eJohn%2eSmith"
+ */
+public static String replaceStringChar(String str){
+    StringBuilder builder = new StringBuilder();
+    String[] words = str.split(" ");
+    for(int i = 0; i < words.length; i++){
+
+        builder.append(words[i]);
+        if(i != words.length -1)
+            builder.append("%2e");
+
+    }
+    return builder.toString();
+}
+
+public static void main(String[] args) {
+
+    int[] list = {5,6,1,4,2};
+
+    System.out.println(replaceStringChar("Mr John Smith"));
+    //System.out.println(minCost(9,list));
+}
 
 }

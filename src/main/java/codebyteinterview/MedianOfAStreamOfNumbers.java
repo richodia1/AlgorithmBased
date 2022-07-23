@@ -9,6 +9,7 @@ If the count of numbers inserted in the class is even,
 the median will be the average of the middle two numbers.
 
  */
+import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class MedianOfAStreamOfNumbers {
@@ -16,22 +17,22 @@ public class MedianOfAStreamOfNumbers {
     PriorityQueue<Integer> minHeap; //containing second half of numbers
 
     public MedianOfAStreamOfNumbers () {
-        maxHeap = new PriorityQueue<>((a, b) -> b - a);  // highest to lowest
-        minHeap = new PriorityQueue<>((a, b) -> a - b);  // smallest to highest
+        maxHeap = new PriorityQueue<>(Comparator.reverseOrder());  // highest to lowest
+        minHeap = new PriorityQueue<>();  // smallest to highest
     }
 
     public void insertNum(int num) {
-        if (maxHeap.isEmpty() || maxHeap.peek() >= num)
-            maxHeap.add(num);
-        else
-            minHeap.add(num);
-
-        // either both the heaps will have equal number of elements or max-heap will have one
-        // more element than the min-heap
-        if (maxHeap.size() > minHeap.size() + 1)
-            minHeap.add(maxHeap.poll());
-        else if (maxHeap.size() < minHeap.size())
-            maxHeap.add(minHeap.poll());
+       if(!minHeap.isEmpty() && num < minHeap.peek()){
+           maxHeap.offer(num);
+           if(maxHeap.size() > minHeap.size() +1){
+               minHeap.add(maxHeap.poll());
+           }
+       }else {
+           minHeap.offer(num);
+           if(minHeap.size() > maxHeap.size() + 1){
+               maxHeap.add(minHeap.poll());
+           }
+       }
     }
 
     public double findMedian() {

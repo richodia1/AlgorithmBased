@@ -24,14 +24,19 @@ We can use a Queue to efficiently traverse in BFS fashion. Here are the steps of
    */
 public class BinaryTreeLevelOrderTraversal {
     public static void main(String[] args) {
+
+        String str = "racecar";
+        System.out.println(new StringBuilder(str).reverse().toString().equals(str));
         TreeNode root = new TreeNode(12);
         root.left = new TreeNode(7);
         root.right = new TreeNode(1);
-        root.left.left = new TreeNode(9);
         root.right.left = new TreeNode(10);
         root.right.right = new TreeNode(5);
-        List<List<Integer>> result = traverse(root);
-        System.out.println("Level order traversal: " + result);
+        System.out.println("Tree Maximum Depth: " + MaximumBinaryTreeDepth(root));
+        root.left.left = new TreeNode(9);
+        root.right.left.left = new TreeNode(11);
+        System.out.println("Tree Maximum Depth: " + MaximumBinaryTreeDepth(root));
+
     }
 
     static class TreeNode {
@@ -42,6 +47,25 @@ public class BinaryTreeLevelOrderTraversal {
         TreeNode(int x) {
             val = x;
         }
+    }
+    public static  int MaximumBinaryTreeDepth(TreeNode root){
+      if(root ==null) return 0;
+
+      Queue<TreeNode> queue = new LinkedList<>();
+      queue.add(root);
+      int maxDept = 0;
+      while (!queue.isEmpty()){
+          maxDept++;
+          int levelSize = queue.size();
+          for(int i = 0; i < levelSize; i++){
+              TreeNode currentNode = queue.poll();
+              if(currentNode.left !=null)
+                  queue.add(currentNode.left);
+              if(currentNode.right !=null)
+                  queue.add(currentNode.right);
+          }
+      }
+      return maxDept;
     }
     public static List<List<Integer>> traverseTree(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
@@ -71,6 +95,7 @@ public class BinaryTreeLevelOrderTraversal {
 Given a binary tree, populate an array to represent the averages of all of its levels.
 
      */
+
     public static List<Double> findLevelAverages(TreeNode root) {
         List<Double> result = new ArrayList<>();
         if (root == null)

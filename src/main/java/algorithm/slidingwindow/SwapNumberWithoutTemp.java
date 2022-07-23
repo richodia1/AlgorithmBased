@@ -6,7 +6,7 @@ public class SwapNumberWithoutTemp {
 
     public static void main(String[] args){
 
-         System.out.println(MostFrequest("Bolu Bolu how many times I call you"));
+         System.out.println(MostFrequest("Bolu many Bolu how many times I many call you"));
     }
     /*
     Design a method to find the frequency of occurrences of any given word in a
