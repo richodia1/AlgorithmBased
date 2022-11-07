@@ -123,3 +123,5 @@ algorithm/slidingwindow/MaxStreaksCoinsProblem.java
  algorithm.slidingwindow.MaxStreaksCoinsProblem
 algorithm/slidingwindow/LeastOpsExpressTargetProblem.java
  algorithm.slidingwindow.LeastOpsExpressTargetProblem
+algorithm/slidingwindow/MaximumNumberOfVowelsInString.java
+ algorithm.slidingwindow.MaximumNumberOfVowelsInString
