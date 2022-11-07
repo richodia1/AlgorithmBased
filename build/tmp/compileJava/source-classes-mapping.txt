@@ -121,3 +121,5 @@ algorithm/slidingwindow/LongestPalindromeStrings.java
  algorithm.slidingwindow.LongestPalindromeStrings
 algorithm/slidingwindow/MaxStreaksCoinsProblem.java
  algorithm.slidingwindow.MaxStreaksCoinsProblem
+algorithm/slidingwindow/LeastOpsExpressTargetProblem.java
+ algorithm.slidingwindow.LeastOpsExpressTargetProblem
