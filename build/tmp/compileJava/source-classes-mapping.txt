@@ -16,8 +16,8 @@ codewars/MergedIntervalProblem.java
  codewars.MergedIntervalProblem$Interval
 algorithm/slidingwindow/MaximumSubArray.java
  algorithm.slidingwindow.MaximumSubArray
-codewars/PrepairedSolution.java
- codewars.PrepairedSolution
+codebyteinterview/KthSmallestNumber.java
+ codebyteinterview.KthSmallestNumber
 algorithm/slidingwindow/StringPermutationPattern.java
  algorithm.slidingwindow.StringPermutationPattern
 binarytreelevelordertranversal/BinaryTreeLevelOrderTraversal.java
@@ -64,20 +64,30 @@ websocket/EchoListener.java
  websocket.EchoListener
 algorithm/slidingwindow/MaxFruitCountOf2Types.java
  algorithm.slidingwindow.MaxFruitCountOf2Types
-codebyteinterview/KthSmallestNumber.java
- codebyteinterview.KthSmallestNumber
+treedsa/BinaryTreeDSA.java
+ treedsa.BinaryTreeDSA
+ treedsa.BinaryTreeDSA$TreeNode
+algorithm/slidingwindow/Solution.java
+ algorithm.slidingwindow.Solution
 codebyteinterview/RotateArrayRightKthPosition.java
  codebyteinterview.RotateArrayRightKthPosition
 algorithm/slidingwindow/MedianOfTwoArray.java
  algorithm.slidingwindow.MedianOfTwoArray
 algorithm/slidingwindow/ConsumeWebSocketCode.java
  algorithm.slidingwindow.ConsumeWebSocketCode
+slidingwindow2/CostOfGasStationTranversal.java
+ slidingwindow2.CostOfGasStationTranversal
 codebyteinterview/DocumentSearching.java
  codebyteinterview.DocumentSearching
+algorithm/slidingwindow/NearestPalindrome.java
+ algorithm.slidingwindow.NearestPalindrome
 algorithm/slidingwindow/SwapNumberWithoutTemp.java
  algorithm.slidingwindow.SwapNumberWithoutTemp
 codebyteinterview/MaxValueInAGrid.java
  codebyteinterview.MaxValueInAGrid
+graph/GraphAlgorithm.java
+ graph.GraphAlgorithm
+ graph.GraphAlgorithm$Node
 codebyteinterview/LongestString.java
  codebyteinterview.LongestString
 glovo/AnagramClass.java
@@ -86,6 +96,8 @@ codility/MediaStream2.java
  codility.MediaStream2
 algorithm/slidingwindow/PairWithTagetTwoSUM.java
  algorithm.slidingwindow.PairWithTagetTwoSUM
+codewars/PrepairedSolution.java
+ codewars.PrepairedSolution
 codebyteinterview/SmallestMissingPositiveNumber.java
  codebyteinterview.SmallestMissingPositiveNumber
 glovo/ArraySwapper.java
@@ -99,19 +111,13 @@ websocket/WebSocketApp.java
  websocket.WebSocketApp
 algorithm/slidingwindow/StringAnagrams.java
  algorithm.slidingwindow.StringAnagrams
+algorithm/slidingwindow/CyclicRotationArray.java
+ algorithm.slidingwindow.CyclicRotationArray
 algorithm/slidingwindow/CyclicSortArray.java
  algorithm.slidingwindow.CyclicSortArray
 sorting/Mersort.java
  sorting.Mersort
-algorithm/slidingwindow/Solution.java
- algorithm.slidingwindow.Solution
-graph/GraphAlgorithm.java
- graph.GraphAlgorithm
- graph.GraphAlgorithm$Node
-treedsa/BinaryTreeDSA.java
- treedsa.BinaryTreeDSA
- treedsa.BinaryTreeDSA$TreeNode
-slidingwindow2/CostOfGasStationTranversal.java
- slidingwindow2.CostOfGasStationTranversal
-algorithm/slidingwindow/CyclicRotationArray.java
- algorithm.slidingwindow.CyclicRotationArray
+algorithm/slidingwindow/LongestPalindromeStrings.java
+ algorithm.slidingwindow.LongestPalindromeStrings
+algorithm/slidingwindow/MaxStreaksCoinsProblem.java
+ algorithm.slidingwindow.MaxStreaksCoinsProblem
