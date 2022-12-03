@@ -23,8 +23,8 @@ algorithm/slidingwindow/StringPermutationPattern.java
 binarytreelevelordertranversal/BinaryTreeLevelOrderTraversal.java
  binarytreelevelordertranversal.BinaryTreeLevelOrderTraversal
  binarytreelevelordertranversal.BinaryTreeLevelOrderTraversal$TreeNode
-codility/BigIntegerFactorialCalculation.java
- codility.BigIntegerFactorialCalculation
+algorithm/slidingwindow/LongestSubstringWithoutRepeatingCharacters.java
+ algorithm.slidingwindow.LongestSubstringWithoutRepeatingCharacters
 algorithm/slidingwindow/CharacterReplacement.java
  algorithm.slidingwindow.CharacterReplacement
 algorithm/slidingwindow/ReplacingOsWith1sCount.java
@@ -71,8 +71,8 @@ algorithm/slidingwindow/Solution.java
  algorithm.slidingwindow.Solution
 codebyteinterview/RotateArrayRightKthPosition.java
  codebyteinterview.RotateArrayRightKthPosition
-algorithm/slidingwindow/MedianOfTwoArray.java
- algorithm.slidingwindow.MedianOfTwoArray
+codility/BigIntegerFactorialCalculation.java
+ codility.BigIntegerFactorialCalculation
 algorithm/slidingwindow/ConsumeWebSocketCode.java
  algorithm.slidingwindow.ConsumeWebSocketCode
 slidingwindow2/CostOfGasStationTranversal.java
@@ -115,13 +115,23 @@ algorithm/slidingwindow/CyclicRotationArray.java
  algorithm.slidingwindow.CyclicRotationArray
 algorithm/slidingwindow/CyclicSortArray.java
  algorithm.slidingwindow.CyclicSortArray
-sorting/Mersort.java
- sorting.Mersort
+algorithm/slidingwindow/MaximumNumberOfVowelsInString.java
+ algorithm.slidingwindow.MaximumNumberOfVowelsInString
 algorithm/slidingwindow/LongestPalindromeStrings.java
  algorithm.slidingwindow.LongestPalindromeStrings
 algorithm/slidingwindow/MaxStreaksCoinsProblem.java
  algorithm.slidingwindow.MaxStreaksCoinsProblem
 algorithm/slidingwindow/LeastOpsExpressTargetProblem.java
  algorithm.slidingwindow.LeastOpsExpressTargetProblem
-algorithm/slidingwindow/MaximumNumberOfVowelsInString.java
- algorithm.slidingwindow.MaximumNumberOfVowelsInString
+algorithm/slidingwindow/LongestCommonSubsequence.java
+ algorithm.slidingwindow.LongestCommonSubsequence
+algorithm/slidingwindow/MedianOfTwoArray.java
+ algorithm.slidingwindow.MedianOfTwoArray
+sorting/Mersort.java
+ sorting.Mersort
+searching/BinarySearchDSA.java
+ searching.BinarySearchDSA
+sorting/BubleSorting.java
+ sorting.BubleSorting
+puzzles/ClosestToZeroSolution.java
+ puzzles.ClosestToZeroSolution

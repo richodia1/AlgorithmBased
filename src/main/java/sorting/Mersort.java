@@ -2,23 +2,9 @@ package sorting;
 
 public class Mersort {
 
-
-    public static void merge2(int[] a, int[] l,int[] r, int left, int right){
-        int i= 0, j = 0, k =0;
-        while (i < left && j < right){
-            if(l[i] <= r[j] ){
-                a[k++] = l[i++];
-            }else {
-                a[k++] = r[j++];
-            }
-        }
-        while (i < left){
-            a[k++] = l[i++];
-        }
-        while (i < right){
-            a[k++] = r[i++];
-        }
-    }
+public static void main(String[] args){
+    System.out.println((double) 2/5);
+}
     public static void mergeSort(int[] a, int n) {
     if(n < 0) return;
     int mid = n /2;
@@ -50,5 +36,18 @@ public class Mersort {
         while (j < right){
             a[k++] = r[j++];
         }
+    }
+    public static void merge2(int[] a, int[] l,int[] r, int left, int right){
+        int i =0, j = 0, k = 0;
+        while (i < left && j < right){
+            if(l[i] <= r[j])
+                a[k++] = l[i++];
+            else a[k++] = r[j++];
+        }
+        while (i < left)
+            a[k++] = l[i++];
+        while (j < right)
+            a[k++] = r[j++];
+
     }
 }
