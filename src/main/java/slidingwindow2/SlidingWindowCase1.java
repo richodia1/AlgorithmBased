@@ -8,15 +8,13 @@ public class SlidingWindowCase1 {
     Subarray Size: 2
      */
     public static int maxSumOfSize(int[] arr, int size){
-
-        int start = 0, maxSum = Integer.MAX_VALUE, subSum = 0;
+        int start = 0, maxSum = Integer.MIN_VALUE, subSum = 0;
         for(int end = 0; end < arr.length; end++){
             subSum += arr[end];
             if(end >= size - 1){
                 maxSum = Math.max(subSum,maxSum);
-                subSum -=arr[start];
+                subSum -= arr[start];
                 start++;
-
             }
         }
         return maxSum;

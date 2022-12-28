@@ -3,8 +3,8 @@ codebyteinterview/RemoveDuplicateNum.java
 binarytreelevelordertranversal/ReverseLevelOrderTraversal.java
  binarytreelevelordertranversal.ReverseLevelOrderTraversal
  binarytreelevelordertranversal.ReverseLevelOrderTraversal$TreeNode
-codewars/StringManipulation1.java
- codewars.StringManipulation1
+codewars/PrepairedSolution.java
+ codewars.PrepairedSolution
 codebyteinterview/BalanceBracket.java
  codebyteinterview.BalanceBracket
 algorithm/slidingwindow/CoinChangeProblem.java
@@ -58,8 +58,8 @@ codility/Program.java
  codility.Program
 codility/MedianOFIntegerStream.java
  codility.MedianOFIntegerStream
-slidingwindow2/SlidingWindowCase1.java
- slidingwindow2.SlidingWindowCase1
+sorting/BubleSorting.java
+ sorting.BubleSorting
 websocket/EchoListener.java
  websocket.EchoListener
 algorithm/slidingwindow/MaxFruitCountOf2Types.java
@@ -81,8 +81,8 @@ codebyteinterview/DocumentSearching.java
  codebyteinterview.DocumentSearching
 algorithm/slidingwindow/NearestPalindrome.java
  algorithm.slidingwindow.NearestPalindrome
-algorithm/slidingwindow/SwapNumberWithoutTemp.java
- algorithm.slidingwindow.SwapNumberWithoutTemp
+searching/BinarySearchDSA.java
+ searching.BinarySearchDSA
 codebyteinterview/MaxValueInAGrid.java
  codebyteinterview.MaxValueInAGrid
 graph/GraphAlgorithm.java
@@ -96,8 +96,8 @@ codility/MediaStream2.java
  codility.MediaStream2
 algorithm/slidingwindow/PairWithTagetTwoSUM.java
  algorithm.slidingwindow.PairWithTagetTwoSUM
-codewars/PrepairedSolution.java
- codewars.PrepairedSolution
+puzzles/ClosestToZeroSolution.java
+ puzzles.ClosestToZeroSolution
 codebyteinterview/SmallestMissingPositiveNumber.java
  codebyteinterview.SmallestMissingPositiveNumber
 glovo/ArraySwapper.java
@@ -129,9 +129,9 @@ algorithm/slidingwindow/MedianOfTwoArray.java
  algorithm.slidingwindow.MedianOfTwoArray
 sorting/Mersort.java
  sorting.Mersort
-searching/BinarySearchDSA.java
- searching.BinarySearchDSA
-sorting/BubleSorting.java
- sorting.BubleSorting
-puzzles/ClosestToZeroSolution.java
- puzzles.ClosestToZeroSolution
+slidingwindow2/SlidingWindowCase1.java
+ slidingwindow2.SlidingWindowCase1
+algorithm/slidingwindow/SwapNumberWithoutTemp.java
+ algorithm.slidingwindow.SwapNumberWithoutTemp
+codewars/StringManipulation1.java
+ codewars.StringManipulation1

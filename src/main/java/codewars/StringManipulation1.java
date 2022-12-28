@@ -10,10 +10,11 @@ public class StringManipulation1 {
         Queue<Integer> maxHeap = new PriorityQueue<>();
         //System.out.println(maxHeap.isEmpty());
         maxHeap.offer(2);
-       System.out.println(maxHeap.isEmpty());
+       System.out.println(!maxHeap.isEmpty());
         maxHeap.offer(4);
         maxHeap.offer(7);
         System.out.println(maxHeap.peek());
+        System.out.println(longest("union","union"));
     }
     public static String longest (String s1, String s2) {
         return (s1 + s2).chars().distinct()

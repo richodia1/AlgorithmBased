@@ -40,6 +40,14 @@ public class PrepairedSolution {
         }
         return new int[]{-1,-1};
     }
+    public static int reverse(int num){
+        int reversed = 0;
+        while(num > 0){
+            reversed = reversed * 10 + num % 10;
+            num /=10;
+        }
+        return reversed;
+    }
 
     public static int binarySearch(int[] arr, int target){
         int left = 0, right = arr.length - 1;
