@@ -44,8 +44,8 @@ codebyteinterview/TwoStringsArePermutations.java
  codebyteinterview.TwoStringsArePermutations
 algorithm/slidingwindow/LongestSubstringKDistinct.java
  algorithm.slidingwindow.LongestSubstringKDistinct
-algorithm/slidingwindow/FindAllMissingNumbers.java
- algorithm.slidingwindow.FindAllMissingNumbers
+algorithm/slidingwindow/CyclicRotationArray.java
+ algorithm.slidingwindow.CyclicRotationArray
 codebyteinterview/RotateArrayLeftKthPosition.java
  codebyteinterview.RotateArrayLeftKthPosition
 codebyteinterview/PermutationOfNumbers.java
@@ -111,8 +111,8 @@ websocket/WebSocketApp.java
  websocket.WebSocketApp
 algorithm/slidingwindow/StringAnagrams.java
  algorithm.slidingwindow.StringAnagrams
-algorithm/slidingwindow/CyclicRotationArray.java
- algorithm.slidingwindow.CyclicRotationArray
+codewars/StringManipulation1.java
+ codewars.StringManipulation1
 algorithm/slidingwindow/CyclicSortArray.java
  algorithm.slidingwindow.CyclicSortArray
 algorithm/slidingwindow/MaximumNumberOfVowelsInString.java
@@ -133,5 +133,5 @@ slidingwindow2/SlidingWindowCase1.java
  slidingwindow2.SlidingWindowCase1
 algorithm/slidingwindow/SwapNumberWithoutTemp.java
  algorithm.slidingwindow.SwapNumberWithoutTemp
-codewars/StringManipulation1.java
- codewars.StringManipulation1
+algorithm/slidingwindow/FindAllMissingNumbers.java
+ algorithm.slidingwindow.FindAllMissingNumbers
