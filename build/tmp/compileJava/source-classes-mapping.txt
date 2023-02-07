@@ -135,3 +135,7 @@ algorithm/slidingwindow/SwapNumberWithoutTemp.java
  algorithm.slidingwindow.SwapNumberWithoutTemp
 algorithm/slidingwindow/FindAllMissingNumbers.java
  algorithm.slidingwindow.FindAllMissingNumbers
+algorithm/slidingwindow/GroupAnagrams.java
+ algorithm.slidingwindow.GroupAnagrams
+algorithm/slidingwindow/Pros.java
+ algorithm.slidingwindow.Pros
