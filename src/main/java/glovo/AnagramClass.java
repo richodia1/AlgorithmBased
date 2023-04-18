@@ -10,14 +10,14 @@ import java.util.Random;
 import static org.testng.Assert.assertNotEquals;
 import static org.testng.Assert.assertTrue;
 public class AnagramClass {
-/*
+
     @Test
     public void TestOne(){
         AnagramClass ana = new AnagramClass();
         assertTrue(ana.isAnagram("rice","ecri"));
         assertNotEquals(ana.isAnagram("rice","ecri"),false);
     }
- */
+
     public static void main(String[] Args){
         SecureRandom rnd = new SecureRandom ();
         System.out.println(rnd.nextInt(123333));

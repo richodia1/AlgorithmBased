@@ -1,10 +1,12 @@
+algorithm/slidingwindow/LeastOpsExpressTargetProblem.java
+ algorithm.slidingwindow.LeastOpsExpressTargetProblem
 codebyteinterview/RemoveDuplicateNum.java
  codebyteinterview.RemoveDuplicateNum
 binarytreelevelordertranversal/ReverseLevelOrderTraversal.java
  binarytreelevelordertranversal.ReverseLevelOrderTraversal
  binarytreelevelordertranversal.ReverseLevelOrderTraversal$TreeNode
-codewars/PrepairedSolution.java
- codewars.PrepairedSolution
+codewars/StringManipulation1.java
+ codewars.StringManipulation1
 codebyteinterview/BalanceBracket.java
  codebyteinterview.BalanceBracket
 algorithm/slidingwindow/CoinChangeProblem.java
@@ -14,6 +16,8 @@ algorithm/slidingwindow/IsPrime.java
 codewars/MergedIntervalProblem.java
  codewars.MergedIntervalProblem
  codewars.MergedIntervalProblem$Interval
+sorting/BubleSorting.java
+ sorting.BubleSorting
 algorithm/slidingwindow/MaximumSubArray.java
  algorithm.slidingwindow.MaximumSubArray
 codebyteinterview/KthSmallestNumber.java
@@ -23,8 +27,8 @@ algorithm/slidingwindow/StringPermutationPattern.java
 binarytreelevelordertranversal/BinaryTreeLevelOrderTraversal.java
  binarytreelevelordertranversal.BinaryTreeLevelOrderTraversal
  binarytreelevelordertranversal.BinaryTreeLevelOrderTraversal$TreeNode
-algorithm/slidingwindow/LongestSubstringWithoutRepeatingCharacters.java
- algorithm.slidingwindow.LongestSubstringWithoutRepeatingCharacters
+codility/BigIntegerFactorialCalculation.java
+ codility.BigIntegerFactorialCalculation
 algorithm/slidingwindow/CharacterReplacement.java
  algorithm.slidingwindow.CharacterReplacement
 algorithm/slidingwindow/ReplacingOsWith1sCount.java
@@ -33,9 +37,16 @@ codility/MinimumRunningSum.java
  codility.MinimumRunningSum
 codebyteinterview/MedianOfAStreamOfNumbers.java
  codebyteinterview.MedianOfAStreamOfNumbers
+treedsa/Location.java
+ treedsa.Location
+searching/BinarySearchDSA.java
+ searching.BinarySearchDSA
 codebyteinterview/ReverseLinkedList.java
  codebyteinterview.ReverseLinkedList
  codebyteinterview.ReverseLinkedList$ListNode
+SingleLinkedList/SingleLinkedList.java
+ SingleLinkedList.SingleLinkedList
+ SingleLinkedList.SingleLinkedList$LinkedListNode
 codebyteinterview/CompressString.java
  codebyteinterview.CompressString
 codebyteinterview/FindDuplicateNumbers.java
@@ -44,24 +55,30 @@ codebyteinterview/TwoStringsArePermutations.java
  codebyteinterview.TwoStringsArePermutations
 algorithm/slidingwindow/LongestSubstringKDistinct.java
  algorithm.slidingwindow.LongestSubstringKDistinct
-algorithm/slidingwindow/CyclicRotationArray.java
- algorithm.slidingwindow.CyclicRotationArray
+algorithm/slidingwindow/FindAllMissingNumbers.java
+ algorithm.slidingwindow.FindAllMissingNumbers
 codebyteinterview/RotateArrayLeftKthPosition.java
  codebyteinterview.RotateArrayLeftKthPosition
 codebyteinterview/PermutationOfNumbers.java
  codebyteinterview.PermutationOfNumbers
+treedsa/Caller.java
+ treedsa.Caller
 glovo/BracketClass.java
  glovo.BracketClass
 algorithm/slidingwindow/MinSizeSubArraySum.java
  algorithm.slidingwindow.MinSizeSubArraySum
+algorithm/slidingwindow/CyclicRotationArray.java
+ algorithm.slidingwindow.CyclicRotationArray
 codility/Program.java
  codility.Program
 codility/MedianOFIntegerStream.java
  codility.MedianOFIntegerStream
-sorting/BubleSorting.java
- sorting.BubleSorting
+slidingwindow2/SlidingWindowCase1.java
+ slidingwindow2.SlidingWindowCase1
 websocket/EchoListener.java
  websocket.EchoListener
+treedsa/Poco.java
+ treedsa.Poco
 algorithm/slidingwindow/MaxFruitCountOf2Types.java
  algorithm.slidingwindow.MaxFruitCountOf2Types
 treedsa/BinaryTreeDSA.java
@@ -71,23 +88,37 @@ algorithm/slidingwindow/Solution.java
  algorithm.slidingwindow.Solution
 codebyteinterview/RotateArrayRightKthPosition.java
  codebyteinterview.RotateArrayRightKthPosition
-codility/BigIntegerFactorialCalculation.java
- codility.BigIntegerFactorialCalculation
+algorithm/slidingwindow/MedianOfTwoArray.java
+ algorithm.slidingwindow.MedianOfTwoArray
 algorithm/slidingwindow/ConsumeWebSocketCode.java
  algorithm.slidingwindow.ConsumeWebSocketCode
 slidingwindow2/CostOfGasStationTranversal.java
  slidingwindow2.CostOfGasStationTranversal
+algorithm/slidingwindow/MaximumNumberOfVowelsInString.java
+ algorithm.slidingwindow.MaximumNumberOfVowelsInString
+algorithm/slidingwindow/GroupAnagrams.java
+ algorithm.slidingwindow.GroupAnagrams
 codebyteinterview/DocumentSearching.java
  codebyteinterview.DocumentSearching
+puzzles/ClosestToZeroSolution.java
+ puzzles.ClosestToZeroSolution
 algorithm/slidingwindow/NearestPalindrome.java
  algorithm.slidingwindow.NearestPalindrome
-searching/BinarySearchDSA.java
- searching.BinarySearchDSA
+DoubleLinkedLists/DoubleLinkedList.java
+ DoubleLinkedLists.DoubleLinkedList
+ DoubleLinkedLists.DoubleLinkedList$1
+ DoubleLinkedLists.DoubleLinkedList$Node
+algorithm/slidingwindow/SwapNumberWithoutTemp.java
+ algorithm.slidingwindow.SwapNumberWithoutTemp
 codebyteinterview/MaxValueInAGrid.java
  codebyteinterview.MaxValueInAGrid
 graph/GraphAlgorithm.java
  graph.GraphAlgorithm
  graph.GraphAlgorithm$Node
+algorithm/slidingwindow/Pros.java
+ algorithm.slidingwindow.Pros
+algorithm/slidingwindow/LongestCommonSubsequence.java
+ algorithm.slidingwindow.LongestCommonSubsequence
 codebyteinterview/LongestString.java
  codebyteinterview.LongestString
 glovo/AnagramClass.java
@@ -96,10 +127,14 @@ codility/MediaStream2.java
  codility.MediaStream2
 algorithm/slidingwindow/PairWithTagetTwoSUM.java
  algorithm.slidingwindow.PairWithTagetTwoSUM
-puzzles/ClosestToZeroSolution.java
- puzzles.ClosestToZeroSolution
+algorithm/slidingwindow/LongestSubstringWithoutRepeatingCharacters.java
+ algorithm.slidingwindow.LongestSubstringWithoutRepeatingCharacters
+codewars/PrepairedSolution.java
+ codewars.PrepairedSolution
 codebyteinterview/SmallestMissingPositiveNumber.java
  codebyteinterview.SmallestMissingPositiveNumber
+treedsa/University.java
+ treedsa.University
 glovo/ArraySwapper.java
  glovo.ArraySwapper
 codebyteinterview/UniqueNumberInArray.java
@@ -111,31 +146,15 @@ websocket/WebSocketApp.java
  websocket.WebSocketApp
 algorithm/slidingwindow/StringAnagrams.java
  algorithm.slidingwindow.StringAnagrams
-codewars/StringManipulation1.java
- codewars.StringManipulation1
-algorithm/slidingwindow/CyclicSortArray.java
- algorithm.slidingwindow.CyclicSortArray
-algorithm/slidingwindow/MaximumNumberOfVowelsInString.java
- algorithm.slidingwindow.MaximumNumberOfVowelsInString
-algorithm/slidingwindow/LongestPalindromeStrings.java
- algorithm.slidingwindow.LongestPalindromeStrings
 algorithm/slidingwindow/MaxStreaksCoinsProblem.java
  algorithm.slidingwindow.MaxStreaksCoinsProblem
-algorithm/slidingwindow/LeastOpsExpressTargetProblem.java
- algorithm.slidingwindow.LeastOpsExpressTargetProblem
-algorithm/slidingwindow/LongestCommonSubsequence.java
- algorithm.slidingwindow.LongestCommonSubsequence
-algorithm/slidingwindow/MedianOfTwoArray.java
- algorithm.slidingwindow.MedianOfTwoArray
+algorithm/slidingwindow/CyclicSortArray.java
+ algorithm.slidingwindow.CyclicSortArray
+codility/MinimumCoin.java
+ codility.MinimumCoin
 sorting/Mersort.java
  sorting.Mersort
-slidingwindow2/SlidingWindowCase1.java
- slidingwindow2.SlidingWindowCase1
-algorithm/slidingwindow/SwapNumberWithoutTemp.java
- algorithm.slidingwindow.SwapNumberWithoutTemp
-algorithm/slidingwindow/FindAllMissingNumbers.java
- algorithm.slidingwindow.FindAllMissingNumbers
-algorithm/slidingwindow/GroupAnagrams.java
- algorithm.slidingwindow.GroupAnagrams
-algorithm/slidingwindow/Pros.java
- algorithm.slidingwindow.Pros
+algorithm/slidingwindow/LongestPalindromeStrings.java
+ algorithm.slidingwindow.LongestPalindromeStrings
+codility/FetchUniversityCountAPI.java
+ codility.FetchUniversityCountAPI
