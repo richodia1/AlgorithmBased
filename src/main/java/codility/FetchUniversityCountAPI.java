@@ -47,7 +47,7 @@ public class FetchUniversityCountAPI {
                     JSONObject inner = uni.getJSONObject("location");
                     String country = inner.getString("country");
 
-                    if ("United Kingdom".equals(country) && score > initscore) {
+                    if ("North Korea".equals(country) && score > initscore) {
                         universityToReturn = university;
                         initscore = score;
                         count++;
@@ -69,38 +69,38 @@ public class FetchUniversityCountAPI {
 }
 
 /*
-public static void main(String[] args) throws IOException, InterruptedException {
-        String url = "https://jsonmock.hackerrank.com/api/universities";
+using System;
+using System.Net.Http;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
-        // Create an HttpClient and a HttpRequest
-        HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(url))
-                .build();
+class AllUniversities {
+    static async Task Main() {
+        int pageNumber = 1;
+        string url = "https://jsonmock.hackerrank.com/api/universities?page=" + pageNumber;
 
-        // Send the HttpRequest and get the HttpResponse as a string
-        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-        String json = response.body();
+        using (HttpClient client = new HttpClient()) {
+            HttpResponseMessage response = await client.GetAsync(url);
+            if (response.IsSuccessStatusCode) {
+                string responseBody = await response.Content.ReadAsStringAsync();
+                JObject jsonObject = JObject.Parse(responseBody);
+                int totalPages = (int)jsonObject["total_pages"];
 
-        // Convert the JSON string into a JSONObject
-        JSONObject jsonObj = new JSONObject(json);
+                Console.WriteLine("Total number of pages: " + totalPages);
+                Console.WriteLine("List of universities on page " + pageNumber + ":");
 
-        // Get the total number of pages
-        int totalPages = jsonObj.getInt("total_pages");
-
-        // Loop through all pages and print out the names of the universities
-        for (int page = 1; page <= totalPages; page++) {
-            String pageUrl = url + "?page=" + page;
-            HttpRequest pageRequest = HttpRequest.newBuilder()
-                    .uri(URI.create(pageUrl))
-                    .build();
-            HttpResponse<String> pageResponse = client.send(pageRequest, HttpResponse.BodyHandlers.ofString());
-            JSONObject pageJsonObj = new JSONObject(pageResponse.body());
-            JSONArray data = pageJsonObj.getJSONArray("data");
-            Stream<Object> stream = data.toList().stream().map(JSONObject.class::cast).map(jsonObject -> jsonObject.getString("name"));
-            stream.forEach(System.out::println);
+                JArray dataArray = (JArray)jsonObject["data"];
+                foreach (JObject university in dataArray) {
+                    string name = (string)university["name"];
+                    string country = (string)university["country"];
+                    Console.WriteLine(name + " (" + country + ")");
+                }
+            } else {
+                Console.WriteLine("Error: HTTP response code " + response.StatusCode);
+            }
         }
     }
- */
+}
 
-
+*/
