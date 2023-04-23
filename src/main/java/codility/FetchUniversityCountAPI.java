@@ -14,7 +14,10 @@ public class FetchUniversityCountAPI {
         String endpoint = "https://jsonmock.hackerrank.com/api/universities";
         int page = 1;
         int totalPages = Integer.MAX_VALUE;
+        System.out.println(" initial Total page :"+ totalPages);
         int count = 0;
+        int initscore = 0;
+        String universityToReturn = "";
 
         while (page <= totalPages) {
             try {
@@ -33,16 +36,23 @@ public class FetchUniversityCountAPI {
 
                 JSONObject jsonObj = new JSONObject(sb.toString());
                 totalPages = jsonObj.getInt("total_pages");
-                System.out.println("Total page :"+ totalPages);
+
                 JSONArray data = jsonObj.getJSONArray("data");
+
                 for (int i = 0; i < data.length(); i++) {
                     JSONObject uni = data.getJSONObject(i);
 
-                    String country = uni.getString("university");
-                    System.out.println("Country is  :"+ country);
-                    if ("United Kingdom".equals(country)) {
+                    String university = uni.getString("university");
+                    int score = uni.getInt("score");
+                    JSONObject inner = uni.getJSONObject("location");
+                    String country = inner.getString("country");
+
+                    if ("United Kingdom".equals(country) && score > initscore) {
+                        universityToReturn = university;
+                        initscore = score;
                         count++;
                     }
+
                 }
 
                 conn.disconnect();
@@ -51,8 +61,9 @@ public class FetchUniversityCountAPI {
                 e.printStackTrace();
             }
         }
+        System.out.println("University name is :"+ universityToReturn +"  score was :"+ initscore);
 
-        System.out.println("Number of universities in the United States: " + count);
+
     }
 
 }
