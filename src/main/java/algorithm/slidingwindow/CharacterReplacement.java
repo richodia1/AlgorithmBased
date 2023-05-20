@@ -46,6 +46,35 @@ public class CharacterReplacement {
         }
         return arr.length;
     }
+    /*
+     * Complete the 'maximumOccurringCharacter' function below.
+     *
+     * The function is expected to return a CHARACTER.
+     * The function accepts STRING text as parameter.
+     */
+
+    public static char maximumOccurringCharacter(String text) {
+        char rtn = 'a';
+        Map<Character, Integer>  charFreq = new HashMap<>();
+
+
+        for(int i = 0; i < text.length(); i ++){
+
+
+            charFreq.put(text.charAt(i),charFreq.getOrDefault(text.charAt(i),0) +1);
+        }
+        int counter = 0;
+        for(Map.Entry<Character, Integer> entry : charFreq.entrySet()){
+            if(entry.getValue() > counter){
+                counter = entry.getValue();
+                rtn = entry.getKey();
+            }
+        }
+
+        return rtn;
+
+    }
+
     public static int findLength(String str, int k) {
         int maxLenght = Integer.MAX_VALUE; int start = 0;
         Map<Character,Integer> charFreq = new HashMap<>();

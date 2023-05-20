@@ -37,8 +37,8 @@ codility/MinimumRunningSum.java
  codility.MinimumRunningSum
 codebyteinterview/MedianOfAStreamOfNumbers.java
  codebyteinterview.MedianOfAStreamOfNumbers
-treedsa/Location.java
- treedsa.Location
+algorithm/slidingwindow/LongestPalindromeStrings.java
+ algorithm.slidingwindow.LongestPalindromeStrings
 searching/BinarySearchDSA.java
  searching.BinarySearchDSA
 codebyteinterview/ReverseLinkedList.java
@@ -61,8 +61,8 @@ codebyteinterview/RotateArrayLeftKthPosition.java
  codebyteinterview.RotateArrayLeftKthPosition
 codebyteinterview/PermutationOfNumbers.java
  codebyteinterview.PermutationOfNumbers
-treedsa/Caller.java
- treedsa.Caller
+algorithm/slidingwindow/CyclicSortArray.java
+ algorithm.slidingwindow.CyclicSortArray
 glovo/BracketClass.java
  glovo.BracketClass
 algorithm/slidingwindow/MinSizeSubArraySum.java
@@ -77,8 +77,8 @@ slidingwindow2/SlidingWindowCase1.java
  slidingwindow2.SlidingWindowCase1
 websocket/EchoListener.java
  websocket.EchoListener
-treedsa/Poco.java
- treedsa.Poco
+sorting/Mersort.java
+ sorting.Mersort
 algorithm/slidingwindow/MaxFruitCountOf2Types.java
  algorithm.slidingwindow.MaxFruitCountOf2Types
 treedsa/BinaryTreeDSA.java
@@ -125,16 +125,16 @@ glovo/AnagramClass.java
  glovo.AnagramClass
 codility/MediaStream2.java
  codility.MediaStream2
-algorithm/slidingwindow/PairWithTagetTwoSUM.java
- algorithm.slidingwindow.PairWithTagetTwoSUM
+codility/FetchUniversityCountAPI.java
+ codility.FetchUniversityCountAPI
 algorithm/slidingwindow/LongestSubstringWithoutRepeatingCharacters.java
  algorithm.slidingwindow.LongestSubstringWithoutRepeatingCharacters
 codewars/PrepairedSolution.java
  codewars.PrepairedSolution
 codebyteinterview/SmallestMissingPositiveNumber.java
  codebyteinterview.SmallestMissingPositiveNumber
-treedsa/University.java
- treedsa.University
+codility/MinimumCoin.java
+ codility.MinimumCoin
 glovo/ArraySwapper.java
  glovo.ArraySwapper
 codebyteinterview/UniqueNumberInArray.java
@@ -148,13 +148,5 @@ algorithm/slidingwindow/StringAnagrams.java
  algorithm.slidingwindow.StringAnagrams
 algorithm/slidingwindow/MaxStreaksCoinsProblem.java
  algorithm.slidingwindow.MaxStreaksCoinsProblem
-algorithm/slidingwindow/CyclicSortArray.java
- algorithm.slidingwindow.CyclicSortArray
-codility/MinimumCoin.java
- codility.MinimumCoin
-sorting/Mersort.java
- sorting.Mersort
-algorithm/slidingwindow/LongestPalindromeStrings.java
- algorithm.slidingwindow.LongestPalindromeStrings
-codility/FetchUniversityCountAPI.java
- codility.FetchUniversityCountAPI
+algorithm/slidingwindow/PairWithTagetTwoSUM.java
+ algorithm.slidingwindow.PairWithTagetTwoSUM
