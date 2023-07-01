@@ -29,8 +29,8 @@ binarytreelevelordertranversal/BinaryTreeLevelOrderTraversal.java
  binarytreelevelordertranversal.BinaryTreeLevelOrderTraversal$TreeNode
 codility/BigIntegerFactorialCalculation.java
  codility.BigIntegerFactorialCalculation
-algorithm/slidingwindow/CharacterReplacement.java
- algorithm.slidingwindow.CharacterReplacement
+algorithm/slidingwindow/PairWithTagetTwoSUM.java
+ algorithm.slidingwindow.PairWithTagetTwoSUM
 algorithm/slidingwindow/ReplacingOsWith1sCount.java
  algorithm.slidingwindow.ReplacingOsWith1sCount
 codility/MinimumRunningSum.java
@@ -67,8 +67,8 @@ glovo/BracketClass.java
  glovo.BracketClass
 algorithm/slidingwindow/MinSizeSubArraySum.java
  algorithm.slidingwindow.MinSizeSubArraySum
-algorithm/slidingwindow/CyclicRotationArray.java
- algorithm.slidingwindow.CyclicRotationArray
+algorithm/slidingwindow/MaxStreaksCoinsProblem.java
+ algorithm.slidingwindow.MaxStreaksCoinsProblem
 codility/Program.java
  codility.Program
 codility/MedianOFIntegerStream.java
@@ -146,7 +146,7 @@ websocket/WebSocketApp.java
  websocket.WebSocketApp
 algorithm/slidingwindow/StringAnagrams.java
  algorithm.slidingwindow.StringAnagrams
-algorithm/slidingwindow/MaxStreaksCoinsProblem.java
- algorithm.slidingwindow.MaxStreaksCoinsProblem
-algorithm/slidingwindow/PairWithTagetTwoSUM.java
- algorithm.slidingwindow.PairWithTagetTwoSUM
+algorithm/slidingwindow/CharacterReplacement.java
+ algorithm.slidingwindow.CharacterReplacement
+algorithm/slidingwindow/CyclicRotationArray.java
+ algorithm.slidingwindow.CyclicRotationArray

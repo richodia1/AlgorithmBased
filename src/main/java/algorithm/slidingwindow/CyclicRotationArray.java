@@ -39,11 +39,11 @@ In your solution, focus on correctness. The performance of your solution will no
  */
 public class CyclicRotationArray {
     public static void main(String[] args){
-       /* int[] arr =  {3, 8, 9, 7, 6};
-        rotate(arr,4);
+        int[] arr =  {3, 8, 9, 7, 6};
+        rotateR(arr,1);
         for(int i : arr) System.out.println(i);
-*/
-        System.out.println(reverse(153));
+
+       // System.out.println(reverse(153));
     }
     public static int reverse(int x) {
 
@@ -62,6 +62,20 @@ public class CyclicRotationArray {
             RightRotate(arr);
             count++;
         }
+    }
+    public static void rotateL(int[] arr, int k){
+        int count = 0;
+        while (count < k){
+            LeftRotate(arr);
+            count++;
+        }
+    }
+    public static void LeftRotate(int[] arr){
+        int temp = arr[0];
+        for(int i= 0; i < arr.length - 1; i++){
+            arr[i] = arr[i + 1];
+        }
+        arr[arr.length - 1] = temp;
     }
     public static void RightRotate(int[] arr){
         int temp = arr[arr.length - 1];
