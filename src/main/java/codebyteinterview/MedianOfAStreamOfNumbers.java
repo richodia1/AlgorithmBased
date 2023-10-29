@@ -38,13 +38,11 @@ public class MedianOfAStreamOfNumbers {
     public double findMedian() {
         if (maxHeap.size() == minHeap.size()) {
             // we have even number of elements, take the average of middle two elements
-            System.out.println("The minimumQueue is: " + minHeap);
-            System.out.println("The MaximumQueue is: " + maxHeap);
+
             return maxHeap.peek() / 2.0 + minHeap.peek() / 2.0;
         }
         // because max-heap will have one more element than the min-heap
-        System.out.println("The minimumQueue is: " + minHeap);
-        System.out.println("The MaximumQueue is: " + maxHeap);
+
         return maxHeap.peek();
     }
     public static void main(String[] args) {
@@ -52,10 +50,7 @@ public class MedianOfAStreamOfNumbers {
         medianOfAStream.insertNum(3);
         medianOfAStream.insertNum(1);
         medianOfAStream.insertNum(2);
-        medianOfAStream.insertNum(4);
-        medianOfAStream.insertNum(5);
-        medianOfAStream.insertNum(6);
-        medianOfAStream.insertNum(7);
+
         System.out.println("The median is: " + medianOfAStream.findMedian());
       //  medianOfAStream.insertNum(5);
        // System.out.println("The median is: " + medianOfAStream.findMedian());

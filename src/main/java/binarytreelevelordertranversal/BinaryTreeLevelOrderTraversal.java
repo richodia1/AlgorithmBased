@@ -26,7 +26,7 @@ public class BinaryTreeLevelOrderTraversal {
     public static void main(String[] args) {
 
         String str = "racecar";
-        System.out.println(new StringBuilder(str).reverse().toString().equals(str));
+        System.out.println("Reversed String :  "+ new StringBuilder(str).reverse().toString().equals(str));
         TreeNode root = new TreeNode(12);
         root.left = new TreeNode(7);
         root.right = new TreeNode(1);

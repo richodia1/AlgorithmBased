@@ -128,9 +128,10 @@ public class ReverseLevelOrderTraversal {
                     queue.offer(currentNode.left);
                 if (currentNode.right != null)
                     queue.offer(currentNode.right);
+
+                result.add(0, currentLevel);
             }
-            // append the current level at the beginning
-            result.add(0, currentLevel);
+
         }
 
         return result;

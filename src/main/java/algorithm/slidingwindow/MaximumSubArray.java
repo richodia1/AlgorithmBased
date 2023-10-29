@@ -6,6 +6,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Stack;
 
 /*
@@ -14,13 +15,13 @@ find the maximum sum of any contiguous subarray of size ‘k’.
  */
 public class MaximumSubArray {
     public static void main(String[] args) {
-        //System.out.println(getNonDupStringPath("AlliDie"));
+        System.out.println(getNonDupStringPath("AlliDie"));
         //System.out.println("Maximum sum of a subarray of size K: "
               //  + findMaxSumSubArr(3, new int[] { 2, 1, 5, 1, 3, 2 }));
        // System.out.println(evaluate("1 2 3.5"));
-        String str = "1h299999999h";
+        //String str = "1h299999999h";
        // System.out.println(str.substring(0,1));
-        System.out.println(NumberToOrdinal(22));
+       // System.out.println(NumberToOrdinal(22));
 
     }
     public static int findMaxSumSubArray2(int k, int[] arr) {
@@ -178,24 +179,19 @@ with no more than K distinct characters.
     */
 
     public static String getNonDupStringPath(String str){
-        StringBuilder builder = new StringBuilder();
+
         HashMap<Character, Integer> dic = new HashMap<>();
         for(int i = 0; i < str.length(); i++){
-            int prevCount = 0;
-            if(dic.containsKey(str.charAt(i))){
-                prevCount = dic.get(str.charAt(i));
-            }
-            dic.put(str.charAt(i),prevCount + 1);
+            dic.put(str.charAt(i),dic.getOrDefault(str.charAt(i),0) + 1);
         }
-        for(int j =0; j < str.length(); j++){
-            if(dic.get(str.charAt(j)) == 1){
-                builder.append(str.charAt(j));
-            }else{
-                continue;
-            }
-        }
+        String keyWithHighestValue = String.valueOf(dic.entrySet()
+                .stream()
+                .min(Map.Entry.comparingByValue())
+                .map(Map.Entry::getKey)
+                .orElse(null));
 
-        return builder.toString();
+
+        return keyWithHighestValue;
     }
 
 }

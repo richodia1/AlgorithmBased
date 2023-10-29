@@ -3,6 +3,7 @@ package codebyteinterview;
 public class CompressString {
 //aabcccccaaa
 public static void main(String[] args) {
+
     System.out.println(Comp("aabcccccaaa"));
 }
 static String Comp(String str){

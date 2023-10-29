@@ -1,10 +1,17 @@
 package glovo;
 
+import java.math.BigInteger;
 import java.util.Deque;
 import java.util.LinkedList;
 
 public class BracketClass {
+    public static BigInteger factorial(BigInteger n) {
+        if (n.equals(BigInteger.ZERO))
+            return BigInteger.ONE;
+        else
+            return n.multiply(factorial(n.subtract(BigInteger.ONE)));
 
+    }
     public static boolean isBalanceBracket(String str){
         if(str == null) return false;
         Deque<Character> deque = new LinkedList<>();
