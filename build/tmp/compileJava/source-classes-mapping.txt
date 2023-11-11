@@ -60,8 +60,8 @@ codebyteinterview/RotateArrayLeftKthPosition.java
  codebyteinterview.RotateArrayLeftKthPosition
 codebyteinterview/PermutationOfNumbers.java
  codebyteinterview.PermutationOfNumbers
-glovo/BracketClass.java
- glovo.BracketClass
+algorithm/slidingwindow/LongestPalindromeStrings.java
+ algorithm.slidingwindow.LongestPalindromeStrings
 algorithm/slidingwindow/MinSizeSubArraySum.java
  algorithm.slidingwindow.MinSizeSubArraySum
 codility/FetchUniversityCountAPI.java
@@ -150,9 +150,23 @@ codility/MinimumCoin.java
  codility.MinimumCoin
 sorting/Mersort.java
  sorting.Mersort
-algorithm/slidingwindow/LongestPalindromeStrings.java
- algorithm.slidingwindow.LongestPalindromeStrings
-Leo/CharacterCounter.java
- Leo.CharacterCounter
+glovo/BracketClass.java
+ glovo.BracketClass
 codebyteinterview/MedianOfAStreamOfNumbers.java
  codebyteinterview.MedianOfAStreamOfNumbers
+Leo/CharacterCounter.java
+ Leo.CharacterCounter
+codewars/NumberToNumerals.java
+ codewars.NumberToNumerals
+Recurssion/RecursionSolution.java
+ Recurssion.RecursionSolution
+codility/ContactsSolution.java
+ codility.ContactsSolution
+ codility.ContactsSolution$Contacts
+ codility.ContactsSolution$TrieNode
+sorting/MergeSort2.java
+ sorting.MergeSort2
+codility/NoPrefixSolution.java
+ codility.NoPrefixSolution
+ codility.NoPrefixSolution$Trie
+ codility.NoPrefixSolution$TrieNode
