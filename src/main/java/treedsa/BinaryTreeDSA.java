@@ -19,6 +19,19 @@ public class BinaryTreeDSA {
             left = null;
             right = null;
         }
+        public static void printLeaves(TreeNode root){
+            if(root == null) return;
+            if(root.left == null && root.right == null){
+                System.out.print(root.data +", ");
+                return;
+            }
+            if(root.left != null){
+                printLeaves(root.left);
+            }
+            if(root.right != null){
+                printLeaves(root.right);
+            }
+        }
         public static List<List<Integer>> traverseTree(TreeNode root) {
             List<List<Integer>> result = new ArrayList<>();
             if(root == null) return null;
@@ -72,27 +85,29 @@ public class BinaryTreeDSA {
 
             return result;
         }
-
-        public static int findDepth2(TreeNode root) {
+        public static int findDepthAgain(TreeNode root) {
             if(root == null) return 0;
+            int depth = 0;
             Queue<TreeNode> queue = new LinkedList<>();
             queue.offer(root);
-            int dept = 0;
             while (!queue.isEmpty()){
-                dept++;
-
-                for(int i =0;i<queue.size();i++){
-                    TreeNode currentNode = queue.poll();
-                    if(currentNode.left ==null && currentNode.right == null){
-                        return dept;
+                depth++;
+                int size = queue.size();
+                for(int i = 0; i < size; i++){
+                    TreeNode node = queue.poll();
+                    if(node.left == null && node.right == null){
+                        return depth;
                     }
-                    if(currentNode.left!=null)
-                        queue.offer(currentNode.left);
-                    if(currentNode.right!=null)
-                        queue.offer(currentNode.right);
+                    if(node.left !=null){
+                        queue.offer(node.left);
+                    }
+                    if(node.right != null){
+                        queue.offer(node.right);
+                    }
+
                 }
             }
-            return dept;
+            return depth;
         }
 
         /*

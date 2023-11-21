@@ -14,8 +14,28 @@ public class SingleLinkedList {
          /**
           * Inserting new node at the end of the linked list
           *
-          * @param item - represent the node item to be added to the linked list
+          * @param  - represent the node item to be added to the linked list
           */
+         // sorted merged list
+         public  LinkedListNode SortedMergedLinkedList( LinkedListNode A, LinkedListNode B){
+             if(A == null) return B;
+             if(B== null) return A;
+             if((int)A.data < (int)B.data){
+                 A.next = SortedMergedLinkedList(A.next,B);
+                 return A;
+             }else{
+                 B.next = SortedMergedLinkedList(A,B.next);
+                 return B;
+             }
+         }
+         // reverse a linkedList node
+         public LinkedListNode reversedLinkedList( LinkedListNode node){
+          if(node == null || node.next == null) return node;
+             LinkedListNode p = reversedLinkedList(node.next);
+             node.next.next = node;
+             node.next = null;
+             return p;
+         }
     public void insertLast(int item){
         LinkedListNode newNode = new LinkedListNode(item);
         LinkedListNode currentNode = head;

@@ -19,6 +19,9 @@ public class MergeSort2 {
          temp[j] = data[j];
          k++;j++;
      }
+     for(i = start; i <= end; i++){
+         data[i] = temp[i - start];
+     }
     }
 public static void MergeSort(int[] data, int start, int end){
     while(start < end){
