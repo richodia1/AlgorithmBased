@@ -22,6 +22,7 @@ public class KthSmallestAndLargestElement {
 
             // If the size of the heap exceeds k, remove the largest element
             if (maxHeap.size() > k) {
+                var p = maxHeap.peek();
                 maxHeap.poll();
             }
         }
@@ -39,6 +40,7 @@ public class KthSmallestAndLargestElement {
 
             // If the size of the heap exceeds k, remove the largest element
             if (maxHeap.size() > k) {
+                var p = maxHeap.peek();
                 maxHeap.poll();
             }
         }

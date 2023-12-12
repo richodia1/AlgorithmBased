@@ -1,5 +1,6 @@
 package binarytreelevelordertranversal;
 
+import javax.swing.tree.TreeNode;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -23,6 +24,7 @@ We can use a Queue to efficiently traverse in BFS fashion. Here are the steps of
 
    */
 public class BinaryTreeLevelOrderTraversal {
+    TreeNode root;
     public static void main(String[] args) {
 
         String str = "racecar";
@@ -48,6 +50,225 @@ public class BinaryTreeLevelOrderTraversal {
             val = x;
         }
     }
+    /**
+     Returns the number of nodes in the tree.
+     Uses a recursive helper that recurs
+     down the tree and counts the nodes.
+     */
+    public int size() {
+        return(size(root));
+    }
+    private int size(TreeNode node) {
+        if (node == null) return(0);
+        else {
+           return (size(node.left) + 1 + size(node.right));
+        }
+    }
+
+
+
+    /**
+     Returns the max root-to-leaf depth of the tree.
+     Uses a recursive helper that recurs down to find
+     the max depth.
+     */
+    public int maxDepth() {
+        return(maxDepth(root));
+    }
+    private int maxDepth(TreeNode node) {
+        if (node==null) {
+            return 0;
+        }
+        else {
+            int lDepth = maxDepth(node.left);
+            int rDepth = maxDepth(node.right);
+
+            // use the larger + 1
+            return(Math.max(lDepth, rDepth) + 1);
+        }
+    }
+    /**
+     Prints the node values in the "inorder" order.
+     Uses a recursive helper to do the traversal.
+     */
+    public void printTree() {
+        printTree(root);
+        System.out.println();
+    }
+    private void printTree(TreeNode node) {
+        if (node == null) return;
+
+        // left, node itself, right
+        printTree(node.left);
+        System.out.print(node.val + "  ");
+        printTree(node.right);
+    }
+    /**
+     Prints the node values in the "postorder" order.
+     Uses a recursive helper to do the traversal.
+     */
+    public void printPostorder() {
+        printPostorder(root);
+        System.out.println();
+    }
+    public void printPostorder(TreeNode node) {
+     if(node == null) return;
+          // left, right, node
+        // first recur on both subtrees
+        printPostorder(node.left);
+        printPostorder(node.right);
+
+        // then deal with the node
+       System.out.println(node.val);
+    }
+    /**
+     Given a binary tree, prints out all of its root-to-leaf
+     paths, one per line. Uses a recursive helper to do the work.
+     */
+    public void printPaths() {
+        int[] path = new int[1000];
+
+        printPaths(root, path, 0);
+    }
+    /**
+     Recursive printPaths helper -- given a node, and an array containing
+     the path from the root node up to but not including this node,
+     prints out all the root-leaf paths.
+     */
+    private void printPaths(TreeNode node, int[] path, int pathLen) {
+        if (node==null) return;
+
+        // append this node to the path array
+        path[pathLen] = node.val;
+        pathLen++;
+
+        // it's a leaf, so print the path that led to here
+        if (node.left==null && node.right==null) {
+            printArray(path, pathLen);
+        }
+        else {
+            // otherwise try both subtrees
+            printPaths(node.left, path, pathLen);
+            printPaths(node.right, path, pathLen);
+        }
+    }
+    /**
+     Utility that prints ints from an array on one line.
+     */
+    private void printArray(int[] ints, int len) {
+        int i;
+        for (i=0; i<len; i++) {
+            System.out.print(ints[i] + " ");
+        }
+        System.out.println();
+    }
+
+    /**
+     Changes the tree into its mirror image.
+
+     So the tree...
+     4
+     / \
+     2   5
+     / \
+     1   3
+
+     is changed to...
+     4
+     / \
+     5   2
+     / \
+     3   1
+
+     Uses a recursive helper that recurs over the tree,
+     swapping the left/right pointers.
+     */
+
+    private void mirror(TreeNode node) {
+        if (node != null) {
+            // do the sub-trees
+            mirror(node.left);
+            mirror(node.right);
+
+            // swap the left/right pointers
+            TreeNode temp = node.left;
+            node.left = node.right;
+            node.right = temp;
+        }
+    }
+    /*
+    Changes the tree by inserting a duplicate node
+    on each nodes's .left.
+
+
+    So the tree...
+            2
+            / \
+            1   3
+
+    Is changed to...
+            2
+            / \
+            2   3
+            /   /
+            1   3
+            /
+            1
+
+    Uses a recursive helper to recur over the tree
+    and insert the duplicates.
+            */
+
+    private void doubleTree(TreeNode node) {
+        TreeNode oldLeft;
+
+        if (node == null) return;
+
+        // do the subtrees
+        doubleTree(node.left);
+        doubleTree(node.right);
+
+        // duplicate this node to its left
+        oldLeft = node.left;
+        node.left = new TreeNode(node.val);
+        node.left.left = oldLeft;
+    }
+    /*
+    Compares the receiver to another tree to
+    see if they are structurally identical. treeA and treeB
+            */
+    public static  boolean areIdentical(TreeNode a, TreeNode b){
+        if( a == null && b == null) return true;
+         else if(a != null && b!=null) {
+            return a.val == b.val && areIdentical(a.left, b.left) && areIdentical(a.right, b.right);
+        }
+         return false;
+    }
+
+    /**
+    /**
+     Tests if a tree meets the conditions to be a
+     binary search tree (BST). Uses the efficient
+     recursive helper.
+     */
+    public static  boolean isBinaryTree(TreeNode root){
+   return isBinaryTree(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+    }
+    public static  boolean isBinaryTree(TreeNode root, int min, int max){
+     if(root == null) return true;
+    boolean isLeft = isBinaryTree(root.left, min, root.val);
+    if(!isLeft) return false;
+    boolean isRight = isBinaryTree(root.right, root.val + 1, max);
+     return isRight;
+    }
+    // another approach
+    public static  boolean isBinaryTree2(TreeNode root){
+        if(root == null) return true;
+        if(root.left != null && root.left.val > root.val) return false;
+        if(root.right !=null && root.right.val <= root.val) return false;
+        return isBinaryTree2(root.left) && isBinaryTree2(root.right);
+    }
+
     public static  int MaximumBinaryTreeDepth(TreeNode root){
       if(root ==null) return 0;
 

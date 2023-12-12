@@ -8,6 +8,7 @@ public class BalancedBraces {
 
     // Function to print all balanced brace combinations
     public static void printBalancedBraces(int n) {
+
         printBalancedBracesHelper("", n, 0, 0);
     }
 

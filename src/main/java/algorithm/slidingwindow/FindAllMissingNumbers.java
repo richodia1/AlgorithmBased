@@ -39,21 +39,21 @@ public class FindAllMissingNumbers {
         arr[j] = temp;
     }
     public static List<Integer> MyfindNumbers(int[] nums) {
+        List<Integer> missings = new ArrayList<>();
         int i = 0;
-        while (i <nums.length){
-            if(nums[i] != nums[nums[i] -1]){
-                swap(nums,i,nums[i] - 1);
-            }else {
-                i++;
+        while ( i < nums.length){
+            if(nums[i] != nums[nums[i] - 1]){
+                swap(nums, i, nums[i] - 1);
+            }
+            i++;
+        }
+        for(i = 0; i < nums.length; i++){
+            if(nums[i] != i + 1){
+                missings.add(i+1);
             }
         }
-        List<Integer> missingNum = new ArrayList<>();
-        for(i = 0; i <nums.length;i++){
-            if(nums[i] != i+1){
-                missingNum.add(i + 1);
-            }
-        }
-        return missingNum;
+        return missings;
     }
+
 
 }

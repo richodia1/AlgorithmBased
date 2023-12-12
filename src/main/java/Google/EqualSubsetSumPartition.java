@@ -12,24 +12,15 @@ public class EqualSubsetSumPartition {
         for (int num : nums) {
             totalSum += num;
         }
-
-        // If the total sum is odd, it cannot be partitioned into two equal subsets
         if (totalSum % 2 != 0) {
             return false;
         }
-
         int targetSum = totalSum / 2;
         int n = nums.length;
-
-        // dp[i][j] will be 'true' if the sum 'j' is possible with the first 'i' numbers
         boolean[][] dp = new boolean[n + 1][targetSum + 1];
-
-        // Sum of 0 is possible with all subsets, so set the first column to 'true'
         for (int i = 0; i <= n; i++) {
             dp[i][0] = true;
         }
-
-        // Fill the dp table
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= targetSum; j++) {
                 // If the current number is greater than the sum, it cannot be included

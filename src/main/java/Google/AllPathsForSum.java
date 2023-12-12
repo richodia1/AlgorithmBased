@@ -21,7 +21,6 @@ public class AllPathsForSum {
         if (currentNode == null) {
             return;
         }
-
         // Add the current node to the current path
         currentPath.add(currentNode.val);
 
