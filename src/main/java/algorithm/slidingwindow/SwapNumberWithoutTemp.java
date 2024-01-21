@@ -3,7 +3,11 @@ package algorithm.slidingwindow;
 import java.util.HashMap;
 
 public class SwapNumberWithoutTemp {
-
+    public static void swap(int a, int b){
+         a = a + b;
+         b = a -b;
+         a = a -b;
+    }
     public static void main(String[] args){
 
          System.out.println(MostFrequest("Bolu many Bolu how many times I many call you"));

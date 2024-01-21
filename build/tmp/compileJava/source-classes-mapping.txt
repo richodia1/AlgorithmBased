@@ -18,8 +18,9 @@ sorting/BubleSorting.java
  sorting.BubleSorting
 codebyteinterview/KthSmallestNumber.java
  codebyteinterview.KthSmallestNumber
-algorithm/slidingwindow/StringPermutationPattern.java
- algorithm.slidingwindow.StringPermutationPattern
+Google/DeleteLinkedListNodeWithKey.java
+ Google.DeleteLinkedListNodeWithKey
+ Google.ListNode
 binarytreelevelordertranversal/BinaryTreeLevelOrderTraversal.java
  binarytreelevelordertranversal.BinaryTreeLevelOrderTraversal
  binarytreelevelordertranversal.BinaryTreeLevelOrderTraversal$TreeNode
@@ -53,8 +54,8 @@ glovo/BracketClass.java
  glovo.BracketClass
 codility/FetchUniversityCountAPI.java
  codility.FetchUniversityCountAPI
-Google/AllPathsForSum.java
- Google.AllPathsForSum
+Google/BalancedBraces.java
+ Google.BalancedBraces
 websocket/EchoListener.java
  websocket.EchoListener
 algorithm/slidingwindow/MaxFruitCountOf2Types.java
@@ -124,9 +125,8 @@ algorithm/slidingwindow/ReplacingOsWith1sCount.java
  algorithm.slidingwindow.ReplacingOsWith1sCount
 Leo/KthSmallestAndLargestElement.java
  Leo.KthSmallestAndLargestElement
-Google/DeleteLinkedListNodeWithKey.java
- Google.DeleteLinkedListNodeWithKey
- Google.ListNode
+algorithm/slidingwindow/SwapNumberWithoutTemp.java
+ algorithm.slidingwindow.SwapNumberWithoutTemp
 sorting/QuickSort.java
  sorting.QuickSort
 Google/FindLowHighIndex.java
@@ -172,8 +172,8 @@ DoubleLinkedLists/DoubleLinkedList.java
  DoubleLinkedLists.DoubleLinkedList
  DoubleLinkedLists.DoubleLinkedList$1
  DoubleLinkedLists.DoubleLinkedList$Node
-algorithm/slidingwindow/SwapNumberWithoutTemp.java
- algorithm.slidingwindow.SwapNumberWithoutTemp
+Google/EqualSubsetSumPartition.java
+ Google.EqualSubsetSumPartition
 graph/GraphAlgorithm.java
  graph.GraphAlgorithm
  graph.GraphAlgorithm$Node
@@ -213,7 +213,9 @@ codility/MinimumCoin.java
  codility.MinimumCoin
 Google/RearrangeString.java
  Google.RearrangeString
-Google/EqualSubsetSumPartition.java
- Google.EqualSubsetSumPartition
-Google/BalancedBraces.java
- Google.BalancedBraces
+Google/AllPathsForSum.java
+ Google.AllPathsForSum
+Google/Questions.java
+ Google.Questions
+algorithm/slidingwindow/StringPermutationPattern.java
+ algorithm.slidingwindow.StringPermutationPattern

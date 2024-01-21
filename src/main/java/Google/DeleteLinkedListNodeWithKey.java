@@ -53,7 +53,7 @@ public class DeleteLinkedListNodeWithKey {
         System.out.println("Original List:");
         deleteNode.printList(head);
 
-        int keyToDelete = 3;
+        int keyToDelete = 4;
         head = deleteNode.deleteNode(head, keyToDelete);
 
         System.out.println("List after deleting node with key " + keyToDelete + ":");

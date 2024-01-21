@@ -29,7 +29,9 @@ Output: true
 Explanation: The string contains "acb" which is a permutation of the given pattern.
 
  */
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class StringPermutationPattern {
@@ -67,6 +69,58 @@ public class StringPermutationPattern {
         return false;
     }
 
+    public static List<String> Print(String[] words){
+        List<String> toPrint= new ArrayList<>();
 
+        for(int i = 0; i < words.length; i++){
+            if(words[i].contains("print")){
+                char[] validPring = words[i].toCharArray();
+                char chToPrint = validPring[validPring.length - 2];
+                String lookUpToPrint = "";
+                for(int j = 0; j < i; j++){
+                    if(words[j].contains(String.valueOf(chToPrint)+"=")){
+                        lookUpToPrint = words[j];
+                    }
+                }
+                if(lookUpToPrint != ""){
+                    String[] arr = lookUpToPrint.split("=");
+                    toPrint.add(arr[1]);
+                }else{
+                    toPrint.add(null);
+                }
+            }
+        }
+        return toPrint;
+    }
+
+    public static void main(String[] args) {
+        String[] inputArray = {
+                "{",
+                "a=10",
+                "print(a)",
+                "{",
+                "c=30",
+                "}",
+                "{",
+                "print(a)",
+                "print(b)",
+                "b=20",
+                "print(b)",
+                "{",
+                "a=40",
+                "print(b)",
+                "print(a)",
+                "print(c)",
+                "}",
+                "print(a)",
+                "}",
+                "print(b)",
+                "}"
+        };
+        var result = Print(inputArray);
+        for(String str : result){
+            System.out.println(str);
+        }
+    }
 
 }
